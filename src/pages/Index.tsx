@@ -27,7 +27,7 @@ const Index = () => (
             <span className="text-gradient">estrutura e estratégia.</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
-            Desenvolvimento de sistemas, organização de processos e planejamento digital para empresas que desejam crescer com base sólida.
+            Sistemas, sites e organização digital para negócios, profissionais e projetos que buscam estrutura e eficiência.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
@@ -36,12 +36,14 @@ const Index = () => (
             >
               Conheça nossos serviços <ArrowRight size={16} />
             </Link>
-            <Link
-              to="/contato"
-              className="inline-flex items-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-secondary"
+            <a
+              href="https://wa.me/+5585997968284"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg border border-primary/40 px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-primary/10 hover:border-primary/60"
             >
               Agendar conversa
-            </Link>
+            </a>
           </div>
         </AnimatedSection>
       </div>
@@ -115,12 +117,14 @@ const Index = () => (
           Pronta para estruturar seu crescimento digital?
         </h2>
         <p className="mt-4 text-muted-foreground">Entre em contato e vamos conversar sobre seu projeto.</p>
-        <Link
-          to="/contato"
+        <a
+          href="https://wa.me/+5585997968284"
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-8 inline-flex items-center gap-2 rounded-lg bg-primary px-8 py-3 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-all"
         >
           Fale conosco <ArrowRight size={16} />
-        </Link>
+        </a>
       </AnimatedSection>
     </section>
   </Layout>
