@@ -10,12 +10,42 @@ const Contact = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    // Simulated submission
-    setTimeout(() => {
+
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    const name = formData.get("name")?.toString() ?? "";
+    const email = formData.get("email")?.toString() ?? "";
+    const company = formData.get("company")?.toString() ?? "";
+    const message = formData.get("message")?.toString() ?? "";
+
+    const to = "edivania.duarte.dev@gmail.com,priscila.kimura@hotmail.com";
+    const subject = `Nova mensagem pelo site Duo-Dev`;
+
+    const lines = [
+      `Nome: ${name}`,
+      `Email: ${email}`,
+      company ? `Empresa: ${company}` : "",
+      "",
+      "Mensagem:",
+      message,
+    ].filter(Boolean);
+
+    const body = lines.join("\n");
+
+    const mailto = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+      body,
+    )}`;
+
+    try {
+      window.location.href = mailto;
+      toast.success("Abrindo seu cliente de e-mail para enviar a mensagem.");
+    } catch (err) {
+      console.error(err);
+      toast.error("Não foi possível abrir o e-mail. Use os endereços abaixo para entrar em contato.");
+    } finally {
       setLoading(false);
-      toast.success("Mensagem enviada com sucesso! Entraremos em contato em breve.");
-      (e.target as HTMLFormElement).reset();
-    }, 1000);
+    }
   };
 
   return (
@@ -26,8 +56,8 @@ const Contact = () => {
           <AnimatedSection className="max-w-2xl mx-auto text-center">
             <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground mb-4">Contato</p>
             <h1 className="font-display text-3xl md:text-5xl font-bold text-foreground leading-tight">
-              Vamos estruturar o crescimento digital da{" "}
-              <span className="text-gradient">sua empresa?</span>
+              Vamos estruturar o seu crescimento digital{" "}
+              <span className="text-gradient">e captar mais clientes?</span>
             </h1>
           </AnimatedSection>
         </div>

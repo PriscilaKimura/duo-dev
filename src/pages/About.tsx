@@ -59,7 +59,17 @@ const About = () => (
                 />
               </div>
               <h3 className="font-display text-lg font-semibold text-foreground">{member.name}</h3>
-              <p className="mt-1 text-sm text-muted-foreground">{member.role}</p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                {member.name === "Edivania Duarte" ? (
+                  <>
+                    Desenvolvedora &amp;
+                    <br />
+                    Estrategista Digital
+                  </>
+                ) : (
+                  member.role
+                )}
+              </p>
             </div>
           </AnimatedSection>
         ))}
@@ -74,13 +84,16 @@ const About = () => (
           <h2 className="font-display text-2xl font-semibold text-foreground mb-6">Quem somos</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Somos duas desenvolvedoras com foco em soluções digitais eficientes e bem estruturadas.
+              Somos duas desenvolvedoras que criam sites e sistemas personalizados para profissionais e negócios que desejam mais organização e presença digital.
             </p>
             <p>
-              Unimos visão estratégica e execução técnica para transformar desafios empresariais em sistemas organizados, funcionais e escaláveis.
+              Desenvolvemos soluções que facilitam a rotina, melhoram o atendimento e transmitem mais profissionalismo.
             </p>
             <p>
-              Acreditamos que tecnologia precisa ser clara, organizada e alinhada ao crescimento do negócio.
+              Um site bem estruturado, por exemplo, pode fortalecer o vínculo do médico com seus pacientes, organizar agendamentos e gerar mais transparência.
+            </p>
+            <p>
+              Acreditamos que tecnologia precisa ser simples de usar, organizada e realmente útil para o dia a dia de quem trabalha.
             </p>
           </div>
         </AnimatedSection>

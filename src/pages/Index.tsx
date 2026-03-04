@@ -1,24 +1,24 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Shield, Zap, Target, Layout, Plug, Server, Database } from "lucide-react";
+import { ArrowRight, Shield, Zap, Target, Layout as LayoutIcon, Plug, Server, Database } from "lucide-react";
 import Layout from "@/components/Layout";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const services = [
   {
-    icon: Layout,
-    title: "Criação de sistemas e sites personalizados",
+    icon: LayoutIcon,
+    title: "Criação de sites e sistemas personalizados",
     titleBreak: true,
-    desc: "Desenvolvemos sistemas e sites feitos sob medida para facilitar a gestão e melhorar os processos do seu negócio.",
+    desc: "Desenvolvemos sites e sistemas feitos sob medida para atender às necessidades do seu trabalho.",
   },
   {
     icon: Plug,
-    title: "Integração entre sistemas",
-    desc: "Conectamos diferentes sistemas e plataformas para que as informações circulem automaticamente, reduzindo retrabalho e aumentando a eficiência.",
+    title: "Desenvolvimento de APIs",
+    desc: "Criamos conexões inteligentes que permitem que sistemas e plataformas conversem entre si.",
   },
   {
     icon: Server,
-    title: "Estrutura e organização do sistema",
-    desc: "Criamos a base tecnológica necessária para que o sistema funcione de forma estável, segura e preparado para evoluir junto com o projeto.",
+    title: "Integrações entre sistemas",
+    desc: "Conectamos ferramentas e plataformas para que as informações circulem automaticamente.",
   },
   {
     icon: Database,
@@ -45,7 +45,7 @@ const Index = () => (
             <span className="text-gradient">estrutura e estratégia.</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
-            Sistemas, sites e organização digital para negócios, profissionais e projetos que buscam estrutura e eficiência.
+            Criação de sites, sistemas e organização digital para negócios, profissionais e projetos que buscam estrutura e eficiência.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
@@ -73,7 +73,7 @@ const Index = () => (
       <AnimatedSection className="max-w-2xl mx-auto text-center">
         <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground mb-4">Sobre nós</p>
         <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground">
-          Duas desenvolvedoras. Uma missão.
+          Duas desenvolvedoras e uma missão.
         </h2>
         <p className="mt-4 text-muted-foreground leading-relaxed">
           Unimos visão estratégica e execução técnica para transformar desafios empresariais em sistemas organizados, funcionais e escaláveis.
@@ -100,7 +100,7 @@ const Index = () => (
               <h3 className="font-display text-base font-semibold text-foreground mb-3 leading-snug">
                 {s.titleBreak ? (
                   <>
-                    Criação de sistemas e sites
+                    Criação de sites e sistemas
                     <br />
                     personalizados
                   </>
@@ -142,7 +142,7 @@ const Index = () => (
     <section className="container mx-auto px-6 py-24">
       <AnimatedSection className="text-center">
         <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground">
-          Pronta para estruturar seu crescimento digital?
+          Pronto para estruturar o seu crescimento digital?
         </h2>
         <p className="mt-4 text-muted-foreground">Entre em contato e vamos conversar sobre seu projeto.</p>
         <a

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Footer = () => (
-  <div className="border-t border-border/50 bg-background w-full">
+  <div className="border-t border-border/50 bg-background w-full mt-16 md:mt-24">
     <div className="container mx-auto px-6 py-12">
       <div className="grid gap-8 md:grid-cols-3">
         <div>
@@ -9,7 +9,7 @@ const Footer = () => (
             dev<span className="text-gradient">duo</span>
           </span>
           <p className="mt-3 text-sm text-muted-foreground max-w-xs">
-            Soluções digitais com estrutura e estratégia para empresas que desejam crescer.
+            Soluções digitais com estrutura e estratégia para o seu negócio.
           </p>
         </div>
         <div>

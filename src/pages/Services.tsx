@@ -1,23 +1,23 @@
-import { Layout, Plug, Server, Database } from "lucide-react";
+import { Layout as LayoutIcon, Plug, Server, Database } from "lucide-react";
 import LayoutWrapper from "@/components/Layout";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const services = [
   {
-    icon: Layout,
-    title: "Criação de sistemas e sites personalizados",
+    icon: LayoutIcon,
+    title: "Criação de sites e sistemas personalizados",
     titleBreak: true,
-    desc: "Desenvolvemos sistemas e sites feitos sob medida para facilitar a gestão e melhorar os processos do seu negócio.",
+    desc: "Desenvolvemos sites e sistemas feitos sob medida para atender às necessidades do seu trabalho.",
   },
   {
     icon: Plug,
-    title: "Integração entre sistemas",
-    desc: "Conectamos diferentes sistemas e plataformas para que as informações circulem automaticamente, reduzindo retrabalho e aumentando a eficiência.",
+    title: "Desenvolvimento de APIs",
+    desc: "Criamos conexões inteligentes que permitem que sistemas e plataformas conversem entre si.",
   },
   {
     icon: Server,
-    title: "Estrutura e organização do sistema",
-    desc: "Criamos a base tecnológica necessária para que o sistema funcione de forma estável, segura e preparado para evoluir junto com o projeto.",
+    title: "Integrações entre sistemas",
+    desc: "Conectamos ferramentas e plataformas para que as informações circulem automaticamente.",
   },
   {
     icon: Database,
@@ -54,7 +54,7 @@ const Services = () => (
               <h3 className="font-display text-base font-semibold text-foreground mb-3 leading-snug">
                 {item.titleBreak ? (
                   <>
-                    Criação de sistemas e sites
+                    Criação de sites e sistemas
                     <br />
                     personalizados
                   </>
