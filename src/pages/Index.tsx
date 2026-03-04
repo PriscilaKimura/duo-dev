@@ -6,13 +6,8 @@ import AnimatedSection from "@/components/AnimatedSection";
 const services = [
   {
     icon: Layout,
-    title: (
-      <>
-        Criação de sistemas e sites
-        <br />
-        personalizados
-      </>
-    ),
+    title: "Criação de sistemas e sites personalizados",
+    titleBreak: true,
     desc: "Desenvolvemos sistemas e sites feitos sob medida para facilitar a gestão e melhorar os processos do seu negócio.",
   },
   {
@@ -92,17 +87,27 @@ const Index = () => (
     <div className="glow-line" />
 
     {/* Services highlight */}
-    <section className="container mx-auto px-6 py-24">
+    <section className="container mx-auto px-6 py-24 w-full">
       <AnimatedSection className="text-center mb-16">
         <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground mb-4">Serviços</p>
         <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground">O que fazemos</h2>
       </AnimatedSection>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
         {services.map((s, i) => (
-          <AnimatedSection key={i} delay={i * 0.08}>
-            <div className="group relative rounded-xl border border-border/60 bg-card/90 p-8 transition-all duration-300 hover:border-primary/40 hover:bg-card hover:shadow-[0_8px_30px_-8px_hsl(var(--primary)/0.25)] hover:-translate-y-0.5">
+          <AnimatedSection key={`service-${i}`} delay={i * 0.08} className="min-w-0">
+            <div className="group relative h-full rounded-xl border border-border/60 bg-card/90 p-8 transition-all duration-300 hover:border-primary/40 hover:bg-card hover:shadow-[0_8px_30px_-8px_hsl(var(--primary)/0.25)] hover:-translate-y-0.5">
               <s.icon size={26} className="text-primary mb-5 shrink-0" strokeWidth={1.5} />
-              <h3 className="font-display text-base font-semibold text-foreground mb-3 leading-snug">{s.title}</h3>
+              <h3 className="font-display text-base font-semibold text-foreground mb-3 leading-snug">
+                {s.titleBreak ? (
+                  <>
+                    Criação de sistemas e sites
+                    <br />
+                    personalizados
+                  </>
+                ) : (
+                  s.title
+                )}
+              </h3>
               <p className="text-sm text-muted-foreground leading-relaxed tracking-tight">{s.desc}</p>
             </div>
           </AnimatedSection>

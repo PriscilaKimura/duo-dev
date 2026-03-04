@@ -5,13 +5,8 @@ import AnimatedSection from "@/components/AnimatedSection";
 const services = [
   {
     icon: Layout,
-    title: (
-      <>
-        Criação de sistemas e sites
-        <br />
-        personalizados
-      </>
-    ),
+    title: "Criação de sistemas e sites personalizados",
+    titleBreak: true,
     desc: "Desenvolvemos sistemas e sites feitos sob medida para facilitar a gestão e melhorar os processos do seu negócio.",
   },
   {
@@ -50,13 +45,23 @@ const Services = () => (
 
     <div className="glow-line" />
 
-    <section className="container mx-auto px-6 py-24">
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    <section className="container mx-auto px-6 py-24 w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
         {services.map((item, i) => (
-          <AnimatedSection key={i} delay={i * 0.08}>
+          <AnimatedSection key={`service-${i}`} delay={i * 0.08} className="min-w-0">
             <div className="group relative h-full rounded-xl border border-border/60 bg-card/90 p-8 transition-all duration-300 hover:border-primary/40 hover:bg-card hover:shadow-[0_8px_30px_-8px_hsl(var(--primary)/0.25)] hover:-translate-y-0.5">
               <item.icon size={26} className="text-primary mb-5 shrink-0" strokeWidth={1.5} />
-              <h3 className="font-display text-base font-semibold text-foreground mb-3 leading-snug">{item.title}</h3>
+              <h3 className="font-display text-base font-semibold text-foreground mb-3 leading-snug">
+                {item.titleBreak ? (
+                  <>
+                    Criação de sistemas e sites
+                    <br />
+                    personalizados
+                  </>
+                ) : (
+                  item.title
+                )}
+              </h3>
               <p className="text-sm text-muted-foreground leading-relaxed tracking-tight">{item.desc}</p>
             </div>
           </AnimatedSection>

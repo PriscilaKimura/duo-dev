@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Footer = () => (
-  <footer className="border-t border-border/50 bg-background">
+  <div className="border-t border-border/50 bg-background w-full">
     <div className="container mx-auto px-6 py-12">
       <div className="grid gap-8 md:grid-cols-3">
         <div>
@@ -38,7 +38,7 @@ const Footer = () => (
         © {new Date().getFullYear()} devduo. Todos os direitos reservados.
       </p>
     </div>
-  </footer>
+  </div>
 );
 
 export default Footer;
