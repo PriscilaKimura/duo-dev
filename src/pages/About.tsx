@@ -1,6 +1,7 @@
 import { CheckCircle } from "lucide-react";
 import Layout from "@/components/Layout";
 import AnimatedSection from "@/components/AnimatedSection";
+import priscilaPhoto from "@/assets/priscila-kimura.jpg";
 
 const values = [
   "Organização",
@@ -19,7 +20,7 @@ const team = [
   {
     name: "Priscila Kimura",
     role: "Desenvolvedora & Organização Digital",
-    image: "/placeholder.svg",
+    image: priscilaPhoto,
   },
 ];
 
