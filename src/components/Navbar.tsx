@@ -36,12 +36,14 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <Link
-            to="/contato"
-            className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90"
+          <a
+            href="https://wa.me/+5585997968284"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-[0_0_20px_-5px_hsl(var(--primary)/0.4)]"
           >
             Agendar conversa
-          </Link>
+          </a>
         </div>
 
         {/* Mobile toggle */}
@@ -78,13 +80,15 @@ const Navbar = () => {
                   {link.label}
                 </Link>
               ))}
-              <Link
-                to="/contato"
+              <a
+                href="https://wa.me/+5585997968284"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
-                className="mt-2 rounded-lg bg-primary px-4 py-2 text-center text-sm font-medium text-primary-foreground"
+                className="mt-2 rounded-lg bg-primary px-4 py-2 text-center text-sm font-medium text-primary-foreground hover:shadow-[0_0_20px_-5px_hsl(var(--primary)/0.4)]"
               >
                 Agendar conversa
-              </Link>
+              </a>
             </div>
           </motion.div>
         )}

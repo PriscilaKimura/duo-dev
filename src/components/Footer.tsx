@@ -29,7 +29,8 @@ const Footer = () => (
         </div>
         <div>
           <h4 className="text-sm font-semibold text-foreground mb-3">Contato</h4>
-          <p className="text-sm text-muted-foreground">contato@devduo.com.br</p>
+          <a href="mailto:edivania.duarte.dev@gmail.com" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">edivania.duarte.dev@gmail.com</a>
+          <a href="mailto:priscila.kimura@hotmail.com" className="block text-sm text-muted-foreground hover:text-foreground transition-colors mt-1">priscila.kimura@hotmail.com</a>
         </div>
       </div>
       <div className="glow-line mt-10 mb-6" />

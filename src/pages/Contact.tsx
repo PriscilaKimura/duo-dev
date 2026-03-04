@@ -37,6 +37,13 @@ const Contact = () => {
 
       <section className="container mx-auto px-6 py-24">
         <AnimatedSection className="max-w-lg mx-auto">
+          <div className="mb-10 space-y-3 text-center">
+            <p className="text-sm text-muted-foreground">Ou entre em contato diretamente:</p>
+            <div className="flex flex-col items-center gap-1">
+              <a href="mailto:edivania.duarte.dev@gmail.com" className="text-sm text-primary hover:underline">edivania.duarte.dev@gmail.com</a>
+              <a href="mailto:priscila.kimura@hotmail.com" className="text-sm text-primary hover:underline">priscila.kimura@hotmail.com</a>
+            </div>
+          </div>
           <form onSubmit={handleSubmit} className="space-y-6">
             {[
               { name: "name", label: "Nome", type: "text", placeholder: "Seu nome completo" },

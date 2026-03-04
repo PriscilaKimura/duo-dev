@@ -10,6 +10,19 @@ const values = [
   "Pensamento estratégico",
 ];
 
+const team = [
+  {
+    name: "Edivânia Duarte",
+    role: "Desenvolvedora & Estrategista Digital",
+    image: "/placeholder.svg",
+  },
+  {
+    name: "Priscila Kimura",
+    role: "Desenvolvedora & Organização Digital",
+    image: "/placeholder.svg",
+  },
+];
+
 const About = () => (
   <Layout>
     <section className="relative overflow-hidden">
@@ -21,6 +34,33 @@ const About = () => (
             Tecnologia com <span className="text-gradient">propósito</span>
           </h1>
         </AnimatedSection>
+      </div>
+    </section>
+
+    <div className="glow-line" />
+
+    {/* Team photos */}
+    <section className="container mx-auto px-6 py-24">
+      <AnimatedSection className="text-center mb-16">
+        <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground mb-4">Nosso time</p>
+        <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground">Quem está por trás</h2>
+      </AnimatedSection>
+      <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+        {team.map((member, i) => (
+          <AnimatedSection key={member.name} delay={i * 0.15}>
+            <div className="group relative rounded-2xl border border-border/50 bg-card p-6 text-center transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_-10px_hsl(var(--primary)/0.2)] w-64">
+              <div className="mx-auto mb-5 h-40 w-40 overflow-hidden rounded-xl border border-border/30 bg-surface transition-transform duration-300 group-hover:scale-[1.03]">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <h3 className="font-display text-lg font-semibold text-foreground">{member.name}</h3>
+              <p className="mt-1 text-sm text-muted-foreground">{member.role}</p>
+            </div>
+          </AnimatedSection>
+        ))}
       </div>
     </section>
 
@@ -62,9 +102,16 @@ const About = () => (
     <section className="container mx-auto px-6 py-24">
       <AnimatedSection className="max-w-2xl mx-auto text-center">
         <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground">Nossa abordagem</h2>
-        <p className="mt-4 text-muted-foreground leading-relaxed">
-          Cada projeto começa com uma compreensão profunda do negócio. A partir disso, desenhamos a solução técnica ideal — sem excessos, sem complexidade desnecessária. Apenas o que importa, feito com excelência.
-        </p>
+        <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
+          <p>
+            Antes de desenvolver, analisamos.<br />
+            Antes de implementar, organizamos.
+          </p>
+          <p>
+            Acreditamos que tecnologia precisa ter propósito e estrutura.<br />
+            Por isso, cada solução nasce de um entendimento claro da necessidade e é construída com método.
+          </p>
+        </div>
       </AnimatedSection>
     </section>
   </Layout>
