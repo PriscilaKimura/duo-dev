@@ -2,6 +2,7 @@ import { CheckCircle } from "lucide-react";
 import Layout from "@/components/Layout";
 import AnimatedSection from "@/components/AnimatedSection";
 import priscilaPhoto from "@/assets/priscila-kimura.jpg";
+import edivaniaPhoto from "@/assets/edivania-duarte.jpg";
 
 const values = [
   "Organização",
@@ -15,7 +16,7 @@ const team = [
   {
     name: "Edivânia Duarte",
     role: "Desenvolvedora & Estrategista Digital",
-    image: "/placeholder.svg",
+    image: edivaniaPhoto,
   },
   {
     name: "Priscila Kimura",
