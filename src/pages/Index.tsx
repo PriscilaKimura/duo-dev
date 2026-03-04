@@ -1,12 +1,35 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Shield, Zap, Target, Code, BarChart3 } from "lucide-react";
+import { ArrowRight, Shield, Zap, Target, Layout, Plug, Server, Database } from "lucide-react";
 import Layout from "@/components/Layout";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const services = [
-  { icon: Code, title: "Desenvolvimento", desc: "Sistemas web, APIs e integrações sob medida para sua operação." },
-  { icon: BarChart3, title: "Organização & Processos", desc: "Mapeamento, otimização e automação de fluxos de trabalho." },
-  { icon: Target, title: "Estratégia Digital", desc: "Planejamento técnico de presença online e melhorias digitais." },
+  {
+    icon: Layout,
+    title: (
+      <>
+        Criação de sistemas e sites
+        <br />
+        personalizados
+      </>
+    ),
+    desc: "Desenvolvemos sistemas e sites feitos sob medida para facilitar a gestão e melhorar os processos do seu negócio.",
+  },
+  {
+    icon: Plug,
+    title: "Integração entre sistemas",
+    desc: "Conectamos diferentes sistemas e plataformas para que as informações circulem automaticamente, reduzindo retrabalho e aumentando a eficiência.",
+  },
+  {
+    icon: Server,
+    title: "Estrutura e organização do sistema",
+    desc: "Criamos a base tecnológica necessária para que o sistema funcione de forma estável, segura e preparado para evoluir junto com o projeto.",
+  },
+  {
+    icon: Database,
+    title: "Organização e gerenciamento de dados",
+    desc: "Estruturamos e organizamos os dados para garantir segurança, agilidade e facilidade na gestão das informações.",
+  },
 ];
 
 const differentials = [
@@ -74,13 +97,13 @@ const Index = () => (
         <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground mb-4">Serviços</p>
         <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground">O que fazemos</h2>
       </AnimatedSection>
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {services.map((s, i) => (
-          <AnimatedSection key={s.title} delay={i * 0.1}>
-            <div className="group rounded-xl border border-border/50 bg-card p-8 transition-all hover:border-primary/30 hover:bg-surface-hover">
-              <s.icon size={28} className="text-primary mb-4" />
-              <h3 className="font-display text-lg font-semibold text-foreground mb-2">{s.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+          <AnimatedSection key={i} delay={i * 0.08}>
+            <div className="group relative rounded-xl border border-border/60 bg-card/90 p-8 transition-all duration-300 hover:border-primary/40 hover:bg-card hover:shadow-[0_8px_30px_-8px_hsl(var(--primary)/0.25)] hover:-translate-y-0.5">
+              <s.icon size={26} className="text-primary mb-5 shrink-0" strokeWidth={1.5} />
+              <h3 className="font-display text-base font-semibold text-foreground mb-3 leading-snug">{s.title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed tracking-tight">{s.desc}</p>
             </div>
           </AnimatedSection>
         ))}

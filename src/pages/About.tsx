@@ -14,7 +14,7 @@ const values = [
 
 const team = [
   {
-    name: "Edivânia Duarte",
+    name: "Edivania Duarte",
     role: "Desenvolvedora & Estrategista Digital",
     image: edivaniaPhoto,
   },

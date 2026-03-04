@@ -1,73 +1,59 @@
-# Welcome to your Lovable project
+# 💻 Duo-Dev | Portfólio Oficial
 
-## Project info
+Este repositório contém o portfólio oficial da Duo-Dev, criado para apresentar nossos serviços, nossa abordagem e nossa identidade como desenvolvedoras.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+O projeto foi desenvolvido com foco em organização, clareza e posicionamento profissional no mercado digital.
 
-## How can I edit this code?
+## 🚀 Sobre a Duo-Dev
 
-There are several ways of editing your application.
+A Duo-Dev é formada por duas desenvolvedoras que unem tecnologia, organização e comunicação estratégica para construir soluções digitais estruturadas e funcionais.
 
-**Use Lovable**
+Nossa proposta vai além do código.  
+Antes de desenvolver, analisamos.  
+Antes de implementar, organizamos.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Acreditamos que tecnologia precisa ter propósito, estrutura e clareza.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎯 O que fazemos
 
-**Use your preferred IDE**
+- Criação de sistemas e sites personalizados
+- Integração entre sistemas
+- Estrutura e organização tecnológica
+- Organização e gerenciamento de dados
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Nosso foco é transformar necessidades em soluções digitais bem estruturadas, estáveis e preparadas para evoluir.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🖥️ Sobre o Projeto
 
-Follow these steps:
+Este portfólio foi desenvolvido com:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Layout multipáginas
+- Design moderno com fundo escuro
+- Detalhes em roxo sofisticado
+- Estrutura responsiva
+- Redirecionamento direto para WhatsApp
+- Exibição de contatos profissionais
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+O objetivo é apresentar nossos serviços de forma estratégica, transmitindo organização, segurança e profissionalismo.
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🛠️ Tecnologias Utilizadas
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- **React** – interface e componentes
+- **TypeScript** – tipagem e qualidade de código
+- **Vite** – build e ambiente de desenvolvimento
+- **React Router** – navegação multipáginas
+- **Tailwind CSS** – estilização e responsividade
+- **shadcn/ui** – componentes de interface (Radix UI)
+- **Framer Motion** – animações
+- **Lucide React** – ícones
 
-**Edit a file directly in GitHub**
+## 📩 Contato
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- edivania.duarte.dev@gmail.com
+- priscila.kimura@hotmail.com
 
-**Use GitHub Codespaces**
+## 📈 Visão
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+A Duo-Dev acredita que tecnologia bem construída organiza, simplifica e fortalece negócios e projetos.
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Este portfólio representa nossa forma de trabalhar: com método, clareza e intenção.
